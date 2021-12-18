@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<title>Music Tempo</title>
+<link rel="stylesheet" href="{{ url_for('static',    filename='css/rank.css') }}">
+
+<link rel="icon" 
+      type="image/png" 
+      href="/static/img/music-note.png">
+
+<div class="rank">
+    <h1>Turkish March <span class="diffcolor">Easy</span> Leaderboard</h1>
+
+    <div class="wrapper row3">
+        <main class="hoc container clear"> 
+            <section id="introblocks">
+                <ul class="nospace group">
+                    <li class="one_third first">
+                    <figure><a class="imgover"><img src="/static/img/1.png" alt=""></a>
+                        <figcaption>
+                        <h6 class="heading">{{ turkish_march_easy_rank.rank1[0] }}:  {{ turkish_march_easy_rank.rank1[1] }}</h6>
+                        </figcaption>
+                    </figure>
+                    </li>
+                    <li class="one_third">
+                    <figure><a class="imgover"><img src="/static/img/2.png" alt=""></a>
+                        <figcaption>
+                        <h6 class="heading">{{ turkish_march_easy_rank.rank2[0] }}:  {{ turkish_march_easy_rank.rank2[1] }}</h6>
+                        </figcaption>
+                    </figure>
+                    </li>
+                    <li class="one_third">
+                    <figure><a class="imgover"><img src="/static/img/3.png" alt=""></a>
+                        <figcaption>
+                        <h6 class="heading">{{ turkish_march_easy_rank.rank3[0] }}:  {{ turkish_march_easy_rank.rank3[1] }}</h6>
+                        </figcaption>
+                    </figure>
+                    </li>
+                </ul>
+            </section>
+            <div class="clear"></div>
+        </main>
+    </div>
+
+    <h1>Turkish March <span class="diffcolor">Normal</span> Leaderboard</h1>
+
+    <div class="wrapper row3">
+        <main class="hoc container clear"> 
+            <section id="introblocks">
+                <ul class="nospace group">
+                    <li class="one_third first">
+                    <figure><a class="imgover"><img src="/static/img/4.png" alt=""></a>
+                        <figcaption>
+                        <h6 class="heading">{{ turkish_march_normal_rank.rank1[0] }}:  {{ turkish_march_normal_rank.rank1[1] }}</h6>
+                        </figcaption>
+                    </figure>
+                    </li>
+                    <li class="one_third">
+                    <figure><a class="imgover"><img src="/static/img/5.png" alt=""></a>
+                        <figcaption>
+                        <h6 class="heading">{{ turkish_march_normal_rank.rank2[0] }}:  {{ turkish_march_normal_rank.rank2[1] }}</h6>
+                        </figcaption>
+                    </figure>
+                    </li>
+                    <li class="one_third">
+                    <figure><a class="imgover"><img src="/static/img/6.png" alt=""></a>
+                        <figcaption>
+                        <h6 class="heading">{{ turkish_march_normal_rank.rank3[0] }}:  {{ turkish_march_normal_rank.rank3[1] }}</h6>
+                        </figcaption>
+                    </figure>
+                    </li>
+                </ul>
+            </section>
+            <div class="clear"></div>
+        </main>
+    </div>
+
+    <center><input class="btn" type="button" value="Retry" onclick="location.href='{{ url_for('index') }}'"></center>
+</div>
