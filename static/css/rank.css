@@ -66,4 +66,4 @@ h1{font-size: 50px; text-align: center}
 .row3{color:#474747; background-color:#FFFFFF;}
 .container{padding:0px 0;}
 
-address, article, aside, figcaption, figure, footer, header, main, nav, section{display:block; margin:0; padding:0;}
+address, article, aside, figcaption, figure, footer, header, main, nav, section{display:block; margin:0; padding:0; cursor: point;}
